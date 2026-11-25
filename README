@@ -1,0 +1,54 @@
+
+# LEGO Train Switch Controller
+
+Software for controlling a LEGO train track switch
+using a Seeed Studio XIAO ESP32-S3 and a DMS-MG90 servo.
+
+## Hardware
+
+- Seeed Studio XIAO ESP32-S3
+- DMS-MG90 positional servo
+- External regulated 5V power supply (servo works on 4.8-6V)
+- LEGO plastic train track switch
+
+## Software
+
+- PlatformIO
+- Arduino framework
+- ESP32Servo library
+
+## Wiring
+
+| Servo wire | Connection |
+|---|---|
+| Brown | External power GND |
+| Red | External 5V |
+| Orange | XIAO D0 |
+
+**Important:** XIAO GND and external power GND must be connected together.
+
+## Controls
+
+The current test program accepts commands through the Serial Monitor.
+
+| Command | Action |
+|---|---|
+| L / l | Move to left position |
+| R / r | Move to right position |
+
+## Servo positions
+
+Current test values:
+
+- Left: 75 degrees
+- Right: 115 degrees
+
+These calibrated to the original LEGO switch.
+
+## Status
+
+## Status
+
+- Working with the original LEGO plastic track switch.
+- Not yet tested with 3D-printed switch mechanisms.
+- 3D-printed mechanisms are expected to require less force, but compatibility and movement still need proper testing.
